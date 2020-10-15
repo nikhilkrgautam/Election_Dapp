@@ -11,6 +11,7 @@ contract Election {
     //Fetch Candidate
     mapping (uint => Candidate) public candidates;
     //Store Candidates Count
+    // Something
     uint public candidatesCount;
 
     constructor () public {
@@ -21,5 +22,5 @@ contract Election {
         candidatesCount ++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
-    
+
 }
